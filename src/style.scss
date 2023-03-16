@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Raleway',sans-serif;
+  font-style: normal;
+  scroll-behavior: smooth;
+  transition: .3s all;
+}
+.container{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+input,button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+body{
+}
+.title{
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+  margin: 32px 0;
+}
+
+@import "pages/Layout/Header/header";
+@import "pages/Layout/Footer/footer";
+@import "pages/Layout/Header/switchLang/switchLang";
+@import "pages/Home/Start/start";
+@import "pages/Category/category";
+@import "pages/Product/product";
+@import "pages/Register/register";
+@import "pages/Favorites/favorites";
+@import "pages/Cart/cart";
+@import "pages/NotFound/notFound";
+@import "pages/Comparison/comparison";
+@import "pages/Catalog/catalog";
+@import "pages/Home/Catalog/catalog";
+@import "pages/Home/OurBrands/ourBrands";
+@import "pages/Home/AboutUs/aboutUs";
+@import "pages/Home/News/news";
+@import "src/components/Calculator/calculator";

@@ -1,0 +1,15 @@
+.brands{
+  padding: 54px;
+  background: black;
+  &__title{
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  &__cont__img{
+    background: white;
+    border-radius: 5px;
+    width: 200px;
+  }
+}

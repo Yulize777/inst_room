@@ -1,0 +1,37 @@
+.us{
+  padding: 80px 0;
+  background: #CBCBCB;
+  &__row{
+    display: flex;
+  }
+  &__left{
+    width: 50%;
+    background: url("../../../assets/images/aboutUs1.png")center/cover no-repeat;
+
+  }
+  &__right{
+    width: 50%;
+    padding-left: 132px;
+    height: 480px;
+    &__title{
+      font-weight: 400;
+      font-size: 30px;
+      color: #000000;
+    }
+    &__desc{
+      margin: 24px 0 40px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+    }
+    &__btn{
+      font-weight: 500;
+      font-size: 16px;
+      color: #FFFFFF;
+      padding: 15px 32px;
+      background: #212526;
+      border-radius: 5px;
+    }
+  }
+}

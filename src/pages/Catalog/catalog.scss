@@ -1,0 +1,113 @@
+.MCatalog{
+  background: #CBCBCB;
+  padding-top: 24px;
+  &__top{
+    display: flex;
+    flex-direction: row;
+    &__home{
+      font-weight: 400;
+      font-size: 14px;
+      color: #8A8A8A;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    &__page{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+  &__line{
+    width: calc(33.33333% - 1.33333px);
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    &:hover{
+      background: #F05A00;
+      border-radius: 5px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 165px;
+    background: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    &__card{
+      width: calc(33.33333% - 13.33333px);
+      background: #F2F5F7;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 340px;
+      &__cont{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 348px;
+      }
+      &__img{
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+      &__subdivision{
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        background: #212526;
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+          cursor: pointer;
+          background: #F05A00;
+          border-radius: 5px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  &__end{
+    background: #FFFFFF;
+    padding: 0 165px 90px;
+    &__btn{
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1px solid #DEDBDB;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #000000;
+      column-gap: 13px;
+    }
+  }
+}

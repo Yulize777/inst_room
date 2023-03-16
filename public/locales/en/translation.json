@@ -1,0 +1,46 @@
+{
+  "header": {
+    "jobTime": "Working hours: 10:00–20:00",
+    "phoneOrder": "Request a call",
+    "sum": "Goods worth",
+    "catalog": "Catalog",
+    "company": "About company",
+    "sales": "Sales",
+    "hits": "Hits of the season",
+    "novelties": "Novelties",
+    "search": "Catalog search"
+  },
+  "home": {
+    "start": {
+      "start__fBlock__title": " DeWALT - Tool\n with real character",
+      "start__fBlock__btn": "Go to catalog",
+      "start__sBlock__title": "Sales",
+      "start__sBlock__title1": "New arrival",
+      "start__sBlock__title2":"Promotions for drills"
+    },
+    "catalog": {
+      "availability": "In Stock",
+      "nonAvailability": "On order",
+      "title": "Everything for the economy",
+      "showF": "Show 4",
+      "showE": "Show 8",
+      "showT": "Show 12",
+      "showS": "Show 16",
+      "showTW": "Show 20",
+      "showAll": "Show all"
+    },
+    "aboutUs": {
+      "title": "About us",
+      "desc": "Commercial or industrial enterprise, commercial and industrial association of entrepreneurs, form of organization of the enterprise, in which its legal personality differs from the legal personality of the persons participating in it. \\n Commercial or industrial enterprise, commercial and industrial association of entrepreneurs, form of organization of the enterprise, \"",
+      "btn": "GO TO CATALOG"
+    },
+    "news": {
+      "news": "News",
+      "desc": "Commercial or industrial enterprise, commercial and industrial association of entrepreneurs, form of organization of the enterprise, in which its legal personality differs from the legal personality of the persons participating in it. \\n Commercial or industrial enterprise, commercial and industrial association of entrepreneurs, form of organization of the enterprise, \"",
+      "btn": "GO TO NEWS",
+      "newsName": "newsName",
+      "data": "12 january 2023"
+    },
+    "brands": "Our brands"
+  }
+}

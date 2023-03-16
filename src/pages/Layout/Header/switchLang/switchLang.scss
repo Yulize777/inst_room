@@ -1,0 +1,28 @@
+.switchLang{
+  position: absolute;
+  top: 110px;
+  right: 230px;
+  z-index: 10;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background: #FC573B;
+  border-radius: 5px;
+  &__lang__cont{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    background: none;
+    border: 1px solid black;
+    &.active{
+      background: black;
+      color: #FC573B;
+    }
+    &:hover{
+      background: black;
+      color: #FC573B;
+    }
+  }
+}

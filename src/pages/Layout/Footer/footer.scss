@@ -1,0 +1,30 @@
+.footer{
+  padding: 45px 0;
+  background: black;
+
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    &__line{
+      font-weight: 400;
+      font-size: 16px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+    &__number{
+      font-weight: 500;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    &__desc{
+      font-weight: 400;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+  }
+}
