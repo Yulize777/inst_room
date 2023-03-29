@@ -22,6 +22,11 @@ input,button{
 }
 body{
 }
+.main{
+  //min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .title{
   font-weight: 400;
   font-size: 40px;
@@ -42,7 +47,12 @@ body{
 @import "pages/Comparison/comparison";
 @import "pages/Catalog/catalog";
 @import "pages/Home/Catalog/catalog";
+@import "pages/MyProfile/myProfile";
 @import "pages/Home/OurBrands/ourBrands";
 @import "pages/Home/AboutUs/aboutUs";
 @import "pages/Home/News/news";
+@import "pages/Admin/admin";
+@import "pages/Order/order";
 @import "src/components/Calculator/calculator";
+@import "src/components/Clock/clock";
+@import "src/components/Filter/price";

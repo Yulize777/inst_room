@@ -4,8 +4,8 @@ import {useAddUserMutation, useGetUsersQuery} from "../../store/reducers/users";
 import {useNavigate} from "react-router-dom";
 
 const Register = () => {
+    const [addUser] = useAddUserMutation()
     const nav = useNavigate()
-    const {data = []} = useGetUsersQuery()
     const {
         register,
         handleSubmit,
@@ -13,7 +13,6 @@ const Register = () => {
         reset,
         formState: {errors}
     } = useForm({mode:"onBlur"})
-    const [addUser] = useAddUserMutation()
     const onSubmit = async data => {
         const {confirm,...other} = data
         await addUser(other)
@@ -28,7 +27,7 @@ const Register = () => {
                 </h1>
                 <label style={{color: errors.surname && '#FC573B'}} className="form__label">
                     Фамилия
-                    <input style={{borderBottom: errors.surname && '1px solid #FC573B'}} {...register('surname',{
+                    <input  style={{borderBottom: errors.surname && '1px solid #FC573B'}} {...register('surname',{
                         required: {
                             value: true,
                             message: 'enter your surname'

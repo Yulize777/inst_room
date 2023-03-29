@@ -2,11 +2,19 @@
   "users": [
     {
       "email": "ruslan602100@gmail.com",
-      "password": "$2a$10$DUjO.y7vi/kBWIZzYOLry.c7Sqq6ticKEqaQJSJKBoaw6uovsS6ua",
+      "password": "$2a$10$xRWIDvUaYiPc0Dx9ALIi0.4Jie50sYZeCo/86M0VDevckpGRQ4OWu",
       "surname": "Yunuza",
       "name": "Ruslan",
-      "phoneNumber": "98",
+      "phoneNumber": "0550525944",
       "id": 1
+    },
+    {
+      "email": "muxamed170899170899@mail.ru",
+      "password": "$2a$10$B1ZFuvjWsISZ83i26jcIueDeymkAHSQfW1o3pnJRylqwpsrWiSFFq",
+      "surname": "Yunuza",
+      "name": "Ruslan",
+      "phoneNumber": "0550525944",
+      "id": 2
     }
   ],
   "products": [
@@ -29,9 +37,29 @@
       "subdivisionRu": "Побелка, краска садовая",
       "reviews": [
         {
-          "id": "46070727-2eda-4ec8-8517-8e74abf6f155",
-          "name": "",
-          "text": ""
+          "id": "4e5e8286-18b1-4387-8220-79470699781c",
+          "name": "svsb",
+          "text": "sdbsdbsd"
+        },
+        {
+          "id": "53a01857-6266-4fac-b16a-9a11b78d4b10",
+          "name": "brabrb",
+          "text": "rlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aernrlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aernrlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aern"
+        },
+        {
+          "id": "ea35b320-b642-4110-b480-6304dde4e38d",
+          "name": "jknjl",
+          "text": "kjnlj"
+        },
+        {
+          "id": "10f6d8c0-7092-4842-8efb-fb876a7e2cba",
+          "name": "uylvy",
+          "text": "khhi"
+        },
+        {
+          "id": "ace5b991-0cdc-4a94-ab88-0842a8f35400",
+          "name": "egrsgerg",
+          "text": "wvwbab rwgr g g qgqgergerg grgergerg regergeger rgreggsrges gesrgerg raegreger geragregarg geragreahae reabearb bsbfdbzfb "
         }
       ],
       "purposeEn": "for walls",
@@ -66,8 +94,19 @@
       "subdivisionRu": "Побелка, краска садовая",
       "reviews": [
         {
-          "name": "",
-          "text": ""
+          "id": "0cc120b3-42ab-4db9-914d-248345eadb9e",
+          "name": "fsbsab",
+          "text": "sfabbf"
+        },
+        {
+          "id": "8c399d18-5e4b-4bdb-acff-ffdedec8f746",
+          "name": "Джамшут",
+          "text": "краска бомба"
+        },
+        {
+          "id": "fa8003ef-15b3-4576-a6ab-4b9643fbdfc7",
+          "name": "фкииваи",
+          "text": "вфифуиваи"
         }
       ],
       "purposeEn": "for walls",
@@ -102,8 +141,9 @@
       "subdivisionRu": "Поликарбонат",
       "reviews": [
         {
-          "name": "",
-          "text": ""
+          "id": "6d742507-e2ae-4a58-9be4-39c6688967da",
+          "name": "Руслан",
+          "text": "Продукт ис бомба\n"
         }
       ],
       "purposeEn": "for welding",
@@ -114,10 +154,10 @@
       "packageRu": "коробка",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": false,
+      "favorite": true,
       "cart": true,
-      "count": 13,
-      "comparison": false
+      "count": 4,
+      "comparison": true
     },
     {
       "id": 4,
@@ -136,12 +176,7 @@
       "category": "overalls",
       "subdivisionEn": "WateringInventory",
       "subdivisionRu": "Поливочный инвентарь",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for welding",
       "purposeRu": "Для сварки",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -150,9 +185,9 @@
       "packageRu": "коробка",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": false,
+      "favorite": true,
       "cart": true,
-      "count": 7,
+      "count": 1,
       "comparison": true
     },
     {
@@ -172,12 +207,7 @@
       "category": "overalls",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "For head protection",
       "purposeRu": "Для защиты головы",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -186,9 +216,9 @@
       "packageRu": "Коробка",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
-      "cart": false,
-      "count": 1,
+      "favorite": false,
+      "cart": true,
+      "count": 4,
       "comparison": true
     },
     {
@@ -208,12 +238,7 @@
       "category": "forHome",
       "subdivisionEn": "gardeningEquipment",
       "subdivisionRu": "Садово-огородный инвентарь",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "For metal cutting",
       "purposeRu": "Для резки металла",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -222,9 +247,9 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": true,
-      "count": 9,
+      "count": 1,
       "comparison": true
     },
     {
@@ -244,12 +269,7 @@
       "category": "forHome",
       "subdivisionEn": "gardeningEquipment",
       "subdivisionRu": "Садово-огородный инвентарь",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for сена",
       "purposeRu": "for hay",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -258,8 +278,8 @@
       "packageRu": "Нет",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
-      "cart": false,
+      "favorite": false,
+      "cart": true,
       "count": 1,
       "comparison": true
     },
@@ -280,12 +300,7 @@
       "subdivisionRu": "Печное литьё",
       "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
       "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "For checking the electricity",
       "purposeRu": "Для проверки тока",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -295,8 +310,8 @@
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
       "favorite": false,
-      "cart": false,
-      "count": 1,
+      "cart": true,
+      "count": 4,
       "comparison": false
     },
     {
@@ -316,12 +331,7 @@
       "category": "seasonal",
       "subdivisionEn": "gardeningEquipment",
       "subdivisionRu": "Садово-огородный инвентарь",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -330,7 +340,7 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": false,
       "count": 1,
       "comparison": true
@@ -352,12 +362,7 @@
       "category": "tools",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -366,9 +371,9 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": false,
-      "count": 1,
+      "count": 3,
       "comparison": true
     },
     {
@@ -388,12 +393,7 @@
       "category": "tools",
       "subdivisionEn": "gardeningEquipment",
       "subdivisionRu": "Садово-огородный инвентарь",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for tiles",
       "purposeRu": "Для плиток",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -402,9 +402,9 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
-      "cart": true,
-      "count": 5,
+      "favorite": false,
+      "cart": false,
+      "count": 1,
       "comparison": true
     },
     {
@@ -424,12 +424,7 @@
       "category": "tools",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -438,7 +433,7 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": false,
       "count": 1,
       "comparison": true
@@ -460,12 +455,7 @@
       "category": "seasonal",
       "subdivisionEn": "WateringInventory",
       "subdivisionRu": "Поливочный инвентарь",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -496,12 +486,7 @@
       "category": "seasonal",
       "subdivisionEn": "Pumps",
       "subdivisionRu": "Насосы",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -532,12 +517,7 @@
       "category": "tools",
       "subdivisionEn": "washbasins",
       "subdivisionRu": "умывальники",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -568,12 +548,7 @@
       "category": "paintingGoods",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -582,10 +557,10 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": false,
       "count": 1,
-      "comparison": true
+      "comparison": false
     },
     {
       "id": 17,
@@ -604,12 +579,7 @@
       "category": "paintingGoods",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -618,10 +588,10 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": false,
       "count": 1,
-      "comparison": true
+      "comparison": false
     },
     {
       "id": 18,
@@ -640,12 +610,7 @@
       "category": "paintingGoods",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -654,7 +619,7 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": false,
       "count": 1,
       "comparison": true
@@ -676,12 +641,7 @@
       "category": "paintingGoods",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -690,7 +650,7 @@
       "packageRu": "ведро",
       "dryingTimeEn": "1 hour",
       "dryingTimeRu": "1 час",
-      "favorite": true,
+      "favorite": false,
       "cart": false,
       "count": 1,
       "comparison": true
@@ -712,12 +672,7 @@
       "category": "paintingGoods",
       "subdivisionEn": "Whitewash",
       "subdivisionRu": "Побелка, краска садовая",
-      "reviews": [
-        {
-          "name": "",
-          "text": ""
-        }
-      ],
+      "reviews": [],
       "purposeEn": "for walls",
       "purposeRu": "Для стен",
       "consumptionEn": "from 0,15 to 0,18 kg/m2",
@@ -730,6 +685,475 @@
       "cart": false,
       "count": 1,
       "comparison": true
+    },
+    {
+      "id": 21,
+      "titleEn": "Measuring Tape",
+      "titleRu": "Рулетка",
+      "price": 200,
+      "discount": 300,
+      "availability": true,
+      "noveltyEn": "novelty",
+      "noveltyRu": "новинка",
+      "salesEn": "",
+      "salesRu": "",
+      "purposeEn": "for walls",
+      "purposeRu": "ведро",
+      "consumptionEn": "from 0,15 to 0,18 kg/m2",
+      "consumptionRu": "от 0,15 до 0,18 кг/м2",
+      "packageEn": "bucket",
+      "packageRu": "ведро",
+      "dryingTimeEn": "1 hour",
+      "dryingTimeRu": "1 час",
+      "descEn": "",
+      "descRu": "",
+      "bg": "",
+      "category": "forHome",
+      "subdivisionEn": "gardeningEquipment",
+      "subdivisionRu": "Садово-огородный инвентарь",
+      "reviews": [],
+      "favorite": false,
+      "cart": false,
+      "comparison": false,
+      "count": 1
+    }
+  ],
+  "orders": [
+    {
+      "name": "Ruslan",
+      "surname": "Yunuza",
+      "phoneNumber": "0550525944",
+      "email": "ruslan602100@gmail.com",
+      "order": {
+        "city": "awvv",
+        "corps": "sdav",
+        "street": "svdasv",
+        "theNearestDeliveryData": "sdavv",
+        "house": "vsda",
+        "apartment": "vdsav",
+        "deliveryPrise": "dsv"
+      },
+      "payment": {
+        "receipt": "creditCard"
+      },
+      "products": [
+        {
+          "id": 1,
+          "titleRu": "Эмаль Condor ПФ-115 жёлтая\n 1,8 кг",
+          "titleEn": "Enamel Condor PF-115 yellow\n 1.8 kg",
+          "price": 500,
+          "discount": 0,
+          "availability": true,
+          "noveltyRu": "Новинка",
+          "noveltyEn": "Novelty",
+          "salesRu": "",
+          "salesEn": "",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog1.png",
+          "category": "paintingGoods",
+          "subdivisionEn": "Whitewash",
+          "subdivisionRu": "Побелка, краска садовая",
+          "reviews": [
+            {
+              "id": "4e5e8286-18b1-4387-8220-79470699781c",
+              "name": "svsb",
+              "text": "sdbsdbsd"
+            },
+            {
+              "id": "53a01857-6266-4fac-b16a-9a11b78d4b10",
+              "name": "brabrb",
+              "text": "rlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aernrlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aernrlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aern"
+            },
+            {
+              "id": "ea35b320-b642-4110-b480-6304dde4e38d",
+              "name": "jknjl",
+              "text": "kjnlj"
+            },
+            {
+              "id": "10f6d8c0-7092-4842-8efb-fb876a7e2cba",
+              "name": "uylvy",
+              "text": "khhi"
+            },
+            {
+              "id": "ace5b991-0cdc-4a94-ab88-0842a8f35400",
+              "name": "egrsgerg",
+              "text": "wvwbab rwgr g g qgqgergerg grgergerg regergeger rgreggsrges gesrgerg raegreger geragregarg geragreahae reabearb bsbfdbzfb "
+            }
+          ],
+          "purposeEn": "for walls",
+          "purposeRu": "Для стен",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "bucket",
+          "packageRu": "ведро",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 1,
+          "comparison": false
+        },
+        {
+          "id": 2,
+          "titleRu": "Эмаль Condor ПФ-115 жёлтая\n 1,8 кг",
+          "titleEn": "Enamel Condor PF-115 yellow\n 1.8 kg",
+          "price": 500,
+          "discount": 720,
+          "availability": true,
+          "noveltyRu": "",
+          "noveltyEn": "",
+          "salesRu": "Акция",
+          "salesEn": "Promotion",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog12.png",
+          "category": "paintingGoods",
+          "subdivisionEn": "Whitewash",
+          "subdivisionRu": "Побелка, краска садовая",
+          "reviews": [
+            {
+              "id": "0cc120b3-42ab-4db9-914d-248345eadb9e",
+              "name": "fsbsab",
+              "text": "sfabbf"
+            },
+            {
+              "id": "8c399d18-5e4b-4bdb-acff-ffdedec8f746",
+              "name": "Джамшут",
+              "text": "краска бомба"
+            },
+            {
+              "id": "fa8003ef-15b3-4576-a6ab-4b9643fbdfc7",
+              "name": "фкииваи",
+              "text": "вфифуиваи"
+            }
+          ],
+          "purposeEn": "for walls",
+          "purposeRu": "Для стен",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "bucket",
+          "packageRu": "ведро",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": true,
+          "cart": true,
+          "count": 1,
+          "comparison": false
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "vsdv",
+      "surname": "sdvv",
+      "phoneNumber": "sdvsv",
+      "email": "dvsvsd",
+      "order": {
+        "pickup": "Москва, ул Первомайская 14"
+      },
+      "payment": {
+        "online": "online"
+      },
+      "products": [
+        {
+          "id": 1,
+          "titleRu": "Эмаль Condor ПФ-115 жёлтая\n 1,8 кг",
+          "titleEn": "Enamel Condor PF-115 yellow\n 1.8 kg",
+          "price": 500,
+          "discount": 0,
+          "availability": true,
+          "noveltyRu": "Новинка",
+          "noveltyEn": "Novelty",
+          "salesRu": "",
+          "salesEn": "",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog1.png",
+          "category": "paintingGoods",
+          "subdivisionEn": "Whitewash",
+          "subdivisionRu": "Побелка, краска садовая",
+          "reviews": [
+            {
+              "id": "4e5e8286-18b1-4387-8220-79470699781c",
+              "name": "svsb",
+              "text": "sdbsdbsd"
+            },
+            {
+              "id": "53a01857-6266-4fac-b16a-9a11b78d4b10",
+              "name": "brabrb",
+              "text": "rlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aernrlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aernrlajvnareubnopanvinlvjernvj;reanbjero;abnreakbn;raekbo;aern"
+            },
+            {
+              "id": "ea35b320-b642-4110-b480-6304dde4e38d",
+              "name": "jknjl",
+              "text": "kjnlj"
+            },
+            {
+              "id": "10f6d8c0-7092-4842-8efb-fb876a7e2cba",
+              "name": "uylvy",
+              "text": "khhi"
+            },
+            {
+              "id": "ace5b991-0cdc-4a94-ab88-0842a8f35400",
+              "name": "egrsgerg",
+              "text": "wvwbab rwgr g g qgqgergerg grgergerg regergeger rgreggsrges gesrgerg raegreger geragregarg geragreahae reabearb bsbfdbzfb "
+            }
+          ],
+          "purposeEn": "for walls",
+          "purposeRu": "Для стен",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "bucket",
+          "packageRu": "ведро",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 1,
+          "comparison": false
+        },
+        {
+          "id": 2,
+          "titleRu": "Эмаль Condor ПФ-115 жёлтая\n 1,8 кг",
+          "titleEn": "Enamel Condor PF-115 yellow\n 1.8 kg",
+          "price": 500,
+          "discount": 720,
+          "availability": true,
+          "noveltyRu": "",
+          "noveltyEn": "",
+          "salesRu": "Акция",
+          "salesEn": "Promotion",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog12.png",
+          "category": "paintingGoods",
+          "subdivisionEn": "Whitewash",
+          "subdivisionRu": "Побелка, краска садовая",
+          "reviews": [
+            {
+              "id": "0cc120b3-42ab-4db9-914d-248345eadb9e",
+              "name": "fsbsab",
+              "text": "sfabbf"
+            },
+            {
+              "id": "8c399d18-5e4b-4bdb-acff-ffdedec8f746",
+              "name": "Джамшут",
+              "text": "краска бомба"
+            },
+            {
+              "id": "fa8003ef-15b3-4576-a6ab-4b9643fbdfc7",
+              "name": "фкииваи",
+              "text": "вфифуиваи"
+            }
+          ],
+          "purposeEn": "for walls",
+          "purposeRu": "Для стен",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "bucket",
+          "packageRu": "ведро",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": true,
+          "cart": true,
+          "count": 1,
+          "comparison": false
+        },
+        {
+          "id": 3,
+          "titleRu": "Gadget ручка-куботан Laix B007v3 ",
+          "titleEn": "Gadget kubotan-pencil Laix B007v3 ",
+          "price": 1200,
+          "discount": 0,
+          "availability": false,
+          "noveltyRu": "Новинка",
+          "noveltyEn": "Novelty",
+          "salesRu": "",
+          "salesEn": "",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog11.png",
+          "category": "electricalEquipment",
+          "subdivisionEn": "Polycarbonate",
+          "subdivisionRu": "Поликарбонат",
+          "reviews": [
+            {
+              "id": "6d742507-e2ae-4a58-9be4-39c6688967da",
+              "name": "Руслан",
+              "text": "Продукт ис бомба\n"
+            }
+          ],
+          "purposeEn": "for welding",
+          "purposeRu": "Для сварки",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "box",
+          "packageRu": "коробка",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 4,
+          "comparison": false
+        },
+        {
+          "id": 4,
+          "titleRu": "Куртка",
+          "titleEn": "Jacket",
+          "price": 2000,
+          "discount": 2600,
+          "availability": true,
+          "noveltyRu": "",
+          "noveltyEn": "",
+          "salesRu": "Акция",
+          "salesEn": "Promotion",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog9.png",
+          "category": "overalls",
+          "subdivisionEn": "WateringInventory",
+          "subdivisionRu": "Поливочный инвентарь",
+          "reviews": [],
+          "purposeEn": "for welding",
+          "purposeRu": "Для сварки",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "box",
+          "packageRu": "коробка",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 4,
+          "comparison": false
+        },
+        {
+          "id": 5,
+          "titleRu": "Строительная каска",
+          "titleEn": "Construction helmet",
+          "price": 300,
+          "discount": 350,
+          "availability": true,
+          "noveltyRu": "",
+          "noveltyEn": "",
+          "salesRu": "Акция",
+          "salesEn": "Promotion",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog8.png",
+          "category": "overalls",
+          "subdivisionEn": "Whitewash",
+          "subdivisionRu": "Побелка, краска садовая",
+          "reviews": [],
+          "purposeEn": "For head protection",
+          "purposeRu": "Для защиты головы",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "Box",
+          "packageRu": "Коробка",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 4,
+          "comparison": true
+        },
+        {
+          "id": 6,
+          "titleRu": "Ножницы по металлу",
+          "titleEn": "Metal shears",
+          "price": 200,
+          "discount": 0,
+          "availability": false,
+          "noveltyRu": "",
+          "noveltyEn": "",
+          "salesRu": "",
+          "salesEn": "",
+          "bg": "./assets/images/catalog7.png",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "category": "forHome",
+          "subdivisionEn": "gardeningEquipment",
+          "subdivisionRu": "Садово-огородный инвентарь",
+          "reviews": [],
+          "purposeEn": "For metal cutting",
+          "purposeRu": "Для резки металла",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "bucket",
+          "packageRu": "ведро",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 1,
+          "comparison": true
+        },
+        {
+          "id": 7,
+          "titleRu": "Вилы",
+          "titleEn": "Pitchfork",
+          "price": 600,
+          "discount": 0,
+          "availability": true,
+          "noveltyRu": "",
+          "noveltyEn": "",
+          "salesRu": "",
+          "salesEn": "",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "bg": "./assets/images/catalog5.png",
+          "category": "forHome",
+          "subdivisionEn": "gardeningEquipment",
+          "subdivisionRu": "Садово-огородный инвентарь",
+          "reviews": [],
+          "purposeEn": "for сена",
+          "purposeRu": "for hay",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "Not",
+          "packageRu": "Нет",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 1,
+          "comparison": true
+        },
+        {
+          "id": 8,
+          "titleRu": "Тестер",
+          "titleEn": "Tester",
+          "price": 1400,
+          "discount": 1800,
+          "availability": true,
+          "noveltyRu": "",
+          "noveltyEn": "",
+          "salesRu": "Акция",
+          "salesEn": "Promotion",
+          "bg": "./assets/images/catalog3.png",
+          "category": "electricalEquipment",
+          "subdivisionEn": "FurnaceCasting",
+          "subdivisionRu": "Печное литьё",
+          "descRu": "Быстросохнущая, высокоукрывистая, защита от водорослей, мха, лишайника, защита от грибка, светостойкая, термостойкая, защита от вредителей",
+          "descEn": "Fast drying, high coverage, algae, moss, lichen, fungus, lightfast, heat resistant, pest control",
+          "reviews": [],
+          "purposeEn": "For checking the electricity",
+          "purposeRu": "Для проверки тока",
+          "consumptionEn": "from 0,15 to 0,18 kg/m2",
+          "consumptionRu": "от 0,15 до 0,18 кг/м2",
+          "packageEn": "bucket",
+          "packageRu": "ведро",
+          "dryingTimeEn": "1 hour",
+          "dryingTimeRu": "1 час",
+          "favorite": false,
+          "cart": true,
+          "count": 4,
+          "comparison": false
+        }
+      ],
+      "id": 2
     }
   ]
 }

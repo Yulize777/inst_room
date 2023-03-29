@@ -17,12 +17,21 @@ export const productsSlice = createApi({
             providesTags: ['products']
         }),
         getProductsBySubdivision: build.query({
-            query : ({category,limit,sort}) => `products?${limit && `_limit=${limit}`}&${category && `subdivisionEn=${category}`}&${sort === 'alpAsc' ? `_sort=titleRu&_order=asc` : sort === 'alpDesc' ? `_sort=titleRu&_order=desc` : sort === 'asc' ? `_sort=price&_order=asc` : sort === 'desc' ? `_sort=price&_order=desc` : ''}`,
+            query : ({category,limit,sort,range}) => `products?${limit && `_limit=${limit}`}&${category && `subdivisionEn=${category}`}&${sort === 'alpAsc' ? `_sort=titleRu&_order=asc&` : sort === 'alpDesc' ? `_sort=titleRu&_order=desc&` : sort === 'asc' ? `_sort=price&_order=asc&` : sort === 'desc' ? `_sort=price&_order=desc&` : ''}`,
             providesTags: ['products']
         }),
         getProductById: build.query({
-            query: (id) => `products?${id && `id=${id}`}`
+            query: (id) => `products?${id && `id=${id}`}`,
+            providesTags: ['products']
 
+        }),
+        addProduct: build.mutation({
+            query: (body) => ({
+                url: `products`,
+                method: 'POST',
+                body: body
+            }),
+            invalidatesTags: ['products']
         }),
         changeFavorite: build.mutation({
             query:({favorite, id}) => ({
@@ -102,6 +111,7 @@ export const {
     useGetProductsBySearchQuery,
     useGetProductsBySubdivisionQuery,
     useGetProductByIdQuery,
+    useAddProductMutation,
     useAddReviewMutation,
     useChangeFavoriteMutation,
     useChangeCartMutation,

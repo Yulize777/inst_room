@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from "react-router-dom";
 import {subdivision} from "../../utils/sibdivision";
 import {useTranslation} from "react-i18next";
@@ -15,8 +15,15 @@ import {RiArrowRightSLine} from "react-icons/ri";
 
 import {categoryForMain, filter} from "../../utils/list";
 import {MdDoneAll} from "react-icons/md";
+import Price from "../../components/Filter/Price";
+import Manufactor from "../../components/Filter/Manufactor";
+import Color from "../../components/Filter/Color";
+import Brand from "../../components/Filter/Brand";
+import axios from "axios";
 
 const Category = () => {
+    const [range,setRange] = useState(0)
+
     const [text,setText] = useState('')
 
     const [turnOn,setTurnOn] = useState(false)
@@ -31,7 +38,7 @@ const Category = () => {
     const [limit,setLimit] = useState(9)
     const [sort,setSort] = useState('')
     const [view,setView] = useState(false)
-    const {data = []} = useGetProductsBySubdivisionQuery({category,limit,sort})
+    const {data = []} = useGetProductsBySubdivisionQuery({category,limit,sort,range})
     const [changeFavorite] = useChangeFavoriteMutation()
     const handleChangeFavorite = async (id) => {
         let body = data.find(item => item.id === id)
@@ -121,20 +128,10 @@ const Category = () => {
                             }
                         </div>
                         <div className="category__navigation__end">
-                            {
-                                filter.map(item => (
-                                    <li key={item.id} className="category__navigation__end__line">
-                                       <div className={'category__navigation__end__line__top'}>
-                                           {
-                                               i18n.language === 'ru' ? item.textRu : item.textEN
-                                           }
-                                           <RiArrowRightSLine style={{fontSize: '32px'}}/>
-                                       </div>
-
-                                    </li>
-                                ))
-                            }
-
+                            <Price range={range} setRange={setRange}/>
+                            <Manufactor/>
+                            <Color/>
+                            <Brand/>
                         </div>
                     </div>
                     <div style={{display: turnOn ? 'flex' : 'none'}} className="category__board">
@@ -143,7 +140,7 @@ const Category = () => {
                                 text === item.textEN && Array.isArray(item.subdivisions)
                             )).map(filteredItem => (
                                 filteredItem.subdivisions.map(subdivision => (
-                                    <li key={subdivision.id} className="category__board__line">
+                                    <li onClick={() => nav(`/catalog/${subdivision.subdivision}`)} key={subdivision.id} className="category__board__line">
                                         { i18n.language === 'ru' ?  subdivision.subdivisionRu :  subdivision.subdivision}
                                     </li>
                                 ))

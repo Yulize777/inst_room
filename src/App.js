@@ -16,8 +16,11 @@ import './style.scss'
 import Catalog from "./pages/Catalog/Catalog";
 import Category from "./pages/Category/Category";
 import Product from "./pages/Product/Product";
-import Calculator from "./components/Calculator/Calculator";
+import Novelty from "./pages/Novelty/Novelty";
+import Sales from "./pages/Sales/Sales";
+import Order from "./pages/Order/Order";
 const App = () => {
+
     return (
         <Suspense fallback={'...Loading'}>
             <Routes>
@@ -31,7 +34,9 @@ const App = () => {
                     <Route path={'comparison'} element={<Comparison/>}/>
                     <Route path={'myProfile'} element={<MyProfile/>}/>
                     <Route path={'admin'} element={<Admin/>}/>
-                    <Route path={'adf'} element={<Calculator/>}/>
+                    <Route path={'novelty'} element={<Novelty/>}/>
+                    <Route path={'sales'} element={<Sales/>}/>
+                    <Route path={'order'} element={<Order/>}/>
                 </Route>
                 <Route path={'/register'} element={<Register/>}/>
                 <Route path={'/login'} element={<Login/>}/>

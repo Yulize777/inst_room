@@ -1,0 +1,37 @@
+.category__price{
+  background: #212526;
+  padding-left: 24px;
+  padding-bottom: 5px;
+  &__range{
+    -webkit-appearance: none;
+    width: 198px;
+    border: 2px solid #F05A00;
+    height: 0;
+    &::-webkit-slider-thumb{
+      -webkit-appearance: none;
+      background: #F05A00;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+    }
+  }
+  &__sums{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  &__first{
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 8px 21px;
+  }
+  &__second{
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 8px 21px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #DEDBDB;
+
+  }
+}

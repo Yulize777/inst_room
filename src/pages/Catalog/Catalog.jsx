@@ -6,6 +6,7 @@ import {category} from "../../utils/list";
 import {useLocation, useNavigate} from "react-router-dom";
 import {AiOutlineReload} from 'react-icons/ai'
 import {subdivision} from "../../utils/sibdivision";
+import Clock from "../../components/Clock/Clock";
 
 const Catalog = () => {
     const location = useLocation()
@@ -17,6 +18,7 @@ const Catalog = () => {
     return (
         <section className={'MCatalog'}>
             <div className="container">
+                {/*<Clock/>*/}
                 <div className="MCatalog__top">
                     <p onClick={() => nav('/')} className="MCatalog__top__home">
                         {

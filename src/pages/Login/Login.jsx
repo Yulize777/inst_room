@@ -12,11 +12,11 @@ const Login = () => {
         reset,
         formState: {errors}
     } = useForm({mode:"onBlur"})
-    const [addUser] = useCheckUserMutation()
+    const [checkUser] = useCheckUserMutation()
     const onSubmit = async data => {
         try {
             const {confirm,...other} = data
-            await addUser(other)
+            await checkUser(other)
             reset()
             nav('/')
         } catch (e) {

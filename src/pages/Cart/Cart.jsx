@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Title from "../../components/Title/Title";
 import {useTranslation} from "react-i18next";
 import {useNavigate} from "react-router-dom";
+import {FcCalculator} from "react-icons/fc"
 import {
     useAddNumberMutation,
     useDeleteCartMutation,
     useGetProductsQuery,
     useSubtractNumberMutation
 } from "../../store/reducers/products";
+import Calculator from "../../components/Calculator/Calculator";
 
 const Cart = () => {
+    const [showCalc,setShowCalc] = useState(false)
     const {t,i18n} = useTranslation()
     const nav = useNavigate()
     const {data = []} = useGetProductsQuery()
@@ -48,6 +51,8 @@ const Cart = () => {
                 </div>
                 <div className="cart__top">
                     <Title title={ i18n.language === 'ru' ? 'Корзина' : 'Basket'}/>
+                    <FcCalculator onClick={() => setShowCalc(prev => !prev)} style={{marginRight:'550px',fontSize: '32px',cursor: 'pointer'}}/>
+                    <Calculator style={showCalc}/>
                     <button onClick={() => nav('/catalog')} className="cart__top__btn">{i18n.language === 'ru' ? 'ПРОДОЛЖИТЬ ПОКУПКИ' : 'Continue Shopping'}</button>
                 </div>
 
@@ -114,7 +119,7 @@ const Cart = () => {
                                 } ₽
                             </p>
                         </div>
-                        <button className="cart__bills__btn">
+                        <button onClick={() => nav('/order')} className="cart__bills__btn">
                             {i18n.language === 'ru' ? 'ПЕРЕЙТИ К ОФОРМЛЕНИЮ' : 'GO TO CHECKOUT'}
                         </button>
                     </div>

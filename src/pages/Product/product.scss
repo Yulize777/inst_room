@@ -188,11 +188,12 @@
           position: relative;
           display: flex;
           flex-direction: column;
-          row-gap: 20px;
+          row-gap: 10px;
           background: #FFFFFF;
           border: 1px solid #DEDBDB;
           border-radius: 5px;
           width: calc(50% - 10px);
+          overflow-wrap: break-word;
         }
         &__name{
           font-weight: 500;
@@ -204,7 +205,6 @@
           font-size: 16px;
           line-height: 24px;
           color: #000000;
-          max-height: 72px;
         }
         &__further{
           font-weight: 400;

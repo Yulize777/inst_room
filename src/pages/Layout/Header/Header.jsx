@@ -96,13 +96,13 @@ const Header = () => {
                            <li className="header__line">
                                {t('header.company')}
                            </li>
-                           <li className="header__line">
+                           <li onClick={() => nav('/sales')} className="header__line">
                                {t('header.sales')}
                            </li>
                            <li className="header__line">
                                {t('header.hits')}
                            </li>
-                           <li className="header__line">
+                           <li onClick={() => nav('/novelty')} className="header__line">
                                {t('header.novelties')}
                            </li>
                        </ul>
@@ -164,9 +164,9 @@ const Header = () => {
                     categoryForMain.filter(item => (
                         text === item.textEN && Array.isArray(item.subdivisions)
                     )).map(filteredItem => (
-                      filteredItem.subdivisions.map(subdivision => (
-                            <li key={subdivision.id} className="category__board__line">
-                                {subdivision.subdivision}
+                        filteredItem.subdivisions.map(subdivision => (
+                            <li onClick={() => nav(`/catalog`)} key={subdivision.id} className="category__board__line" style={{cursor: 'pointer'}}>
+                                { i18n.language === 'ru' ?  subdivision.subdivisionRu : (subdivision.subdivision ? subdivision.subdivision : '')}
                             </li>
                         ))
                     ))

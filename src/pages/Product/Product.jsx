@@ -2,13 +2,20 @@ import React, {useState} from 'react';
 import {subdivision} from "../../utils/sibdivision";
 import {useTranslation} from "react-i18next";
 import {useNavigate, useParams} from "react-router-dom";
-import {useAddReviewMutation, useChangeFavoriteMutation, useGetProductByIdQuery} from "../../store/reducers/products";
+import {
+    useAddReviewMutation, useChangeCartMutation,
+    useChangeComparisonMutation,
+    useChangeFavoriteMutation,
+    useGetProductByIdQuery
+} from "../../store/reducers/products";
 import {BsCheck} from "react-icons/bs";
 import {IoMdStats} from "react-icons/io";
-import {AiOutlineHeart} from "react-icons/ai";
+import {AiOutlineHeart, AiOutlineReload} from "react-icons/ai";
 import { v4 as uuidv4 } from 'uuid';
+import {MdDoneAll} from "react-icons/md";
 
 const Product = () => {
+    const [quantity,setQuantity] = useState(10)
     const [popup,setPopup] = useState(false)
     const [name,setName] = useState('')
     const [text,setText] = useState('')
@@ -20,9 +27,9 @@ const Product = () => {
     const [addReview] = useAddReviewMutation()
     const [changeFavorite] = useChangeFavoriteMutation()
     const handleChangeFavorite = async (id) => {
-        let body = data.favorite
+        let body = data[0].favorite
         await changeFavorite({favorite:body, id})
-        console.log(body)
+
     }
     const handleAddReview = async (id) => {
         const review = {
@@ -30,12 +37,24 @@ const Product = () => {
             name: name,
             text: text
         }
-        const reviews =  data.reviews ? [...data.reviews, review] : [review]
+        const reviews =  data[0].reviews ? [...data[0].reviews, review] : [review]
 
         await addReview({reviews, id}).unwrap()
         setPopup(false)
         setName('')
         setText('')
+    }
+
+    const [changeComparison] = useChangeComparisonMutation()
+    const handleChangeComparison = async (id) => {
+        let body =  data.find(item => item.id === id).comparison
+        await changeComparison({id,body: body})
+    }
+
+    const [changeCart] = useChangeCartMutation()
+    const handleChangeCart = async (id) => {
+        let body = data.find(item => item.id === id)
+        await changeCart({cart: body.cart,id})
     }
     return (
         <section className={'product'}>
@@ -86,21 +105,21 @@ const Product = () => {
                                 <p className="product__card__right__contPrice__discount">{i18n.language === 'ru' ? item.discount ? `${item.discount} ₽` : '' : item.discount ? `${Math.round(item.discount / 75)} $` : ''}</p>
                             </div>
                             <div className="product__card__right__end">
-                                <button className="product__card__right__end__btn">
-                                    { i18n.language === 'ru' ? 'В корзину' : 'Add to cart'}
+                                <button onClick={() => handleChangeCart(item.id)} className="product__card__right__end__btn">
+                                    { !item.cart ?  i18n.language === 'ru' ? 'В корзину' : 'Add to cart' :  i18n.language === 'ru' ? 'Добавлено' : 'Added'}
                                 </button>
                                 <div  className="product__card__right__end__cont">
-                                    <IoMdStats/>
+                                    {
+                                        item.comparison ?  <MdDoneAll style={{cursor: 'pointer'}} onClick={() => handleChangeComparison(item.id)}/> : <IoMdStats style={{cursor: 'pointer'}} onClick={() => handleChangeComparison(item.id)}/>
+                                    }
                                     {
                                         item.favorite ?
                                             <span style={{cursor: 'pointer'}} onClick={() => handleChangeFavorite(item.id)}>
                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.8421 4.61012C20.3313 4.09912 19.7249 3.69376 19.0574 3.4172C18.39 3.14064 17.6746 2.99829 16.9521 2.99829C16.2296 2.99829 15.5142 3.14064 14.8467 3.4172C14.1793 3.69376 13.5728 4.09912 13.0621 4.61012L12.0021 5.67012L10.9421 4.61012C9.91038 3.57842 8.51111 2.99883 7.05207 2.99883C5.59304 2.99883 4.19376 3.57842 3.16207 4.61012C2.13038 5.64181 1.55078 7.04108 1.55078 8.50012C1.55078 9.95915 2.13038 11.3584 3.16207 12.3901L4.22207 13.4501L12.0021 21.2301L19.7821 13.4501L20.8421 12.3901C21.3531 11.8794 21.7584 11.2729 22.035 10.6055C22.3115 9.93801 22.4539 9.2226 22.4539 8.50012C22.4539 7.77763 22.3115 7.06222 22.035 6.39476C21.7584 5.7273 21.3531 5.12087 20.8421 4.61012Z" fill="#FC573B" stroke="#FC573B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
-
                                                    </span> :
                                             <AiOutlineHeart style={{cursor: 'pointer'}} onClick={() => handleChangeFavorite(item.id)}/>
-
                                     }
                                 </div>
                             </div>
@@ -171,20 +190,39 @@ const Product = () => {
                                     <div className={'product__data__parameter__reviews'}>
                                         <div style={{minHeight: '300px'}} className="product__data__parameter__reviews__forCard">
                                             {
-                                                item.reviews[0].name ? item.reviews.map(item => (
-                                                    <div key={item.id} className={'product__data__parameter__reviews__card'}>
-                                                        <p className="product__data__parameter__reviews__name">
-                                                            {item.name}
-                                                        </p>
-                                                        <p className="product__data__parameter__reviews__text">
-                                                            {item.text}
-                                                        </p>
-                                                        <span className="product__data__parameter__reviews__further">
+                                                item.reviews.length ? item.reviews.filter((item,idx) => idx + 1 <= quantity)
+                                                    .map(item => (
+                                                        <div key={item.id} className={'product__data__parameter__reviews__card'}>
+                                                            <p className="product__data__parameter__reviews__name">
+                                                                {item.name}
+                                                            </p>
+                                                            <p  className="product__data__parameter__reviews__text">
+                                                                {item.text}
+                                                            </p>
+                                                            <span className="product__data__parameter__reviews__further">
                                                              {i18n.language === 'ru' ? 'Далее' : 'Further'}
                                                         </span>
-                                                    </div>
-                                                )) : <h2  className="product__data__parameter__reviews__title">{i18n.language === 'ru' ? 'Нет отзывов' : 'No feedbacks'}</h2>
+                                                        </div>
+
+                                                    )): <h2  className="product__data__parameter__reviews__title">{i18n.language === 'ru' ? 'Нет отзывов' : 'No feedbacks'}</h2>
                                             }
+                                            {
+                                                item.reviews.length >= 10 &&   <button style={{background: "white",margin: '0 auto',color: 'black',border: '1px solid #DEDBDB',display: "flex",rowGap: '10px' ,position: 'absolute',bottom: '30px'}} onClick={() => setQuantity(prev => prev + 10)} className="product__data__parameter__reviews__btn">
+                                                    <AiOutlineReload style={{color: '#F05A00',fontSize:'20px'}}/>
+                                                    {
+                                                        i18n.language === 'ru' ? 'Показать еще' : 'Show more'
+                                                    }
+                                                </button>
+                                            }
+                                            {
+                                                quantity > 10 &&   <button style={{background: "white",margin: '0 auto',color: 'black',border: '1px solid #DEDBDB',display: "flex",rowGap: '10px' ,position: 'absolute',bottom: '30px',right: '30px'}} onClick={() => setQuantity(10)} className="product__data__parameter__reviews__btn">
+                                                    <AiOutlineReload style={{color: '#F05A00',fontSize:'20px'}}/>
+                                                    {
+                                                        i18n.language === 'ru' ? 'Свернуть' : 'Collapse'
+                                                    }
+                                                </button>
+                                            }
+
                                         </div>
                                         <div className="product__data__parameter__reviews__forBtn">
                                             <button onClick={() => setPopup(true)} className="product__data__parameter__reviews__btn">
